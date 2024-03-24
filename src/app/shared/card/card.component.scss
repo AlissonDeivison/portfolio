@@ -1,0 +1,19 @@
+.card {
+  background-color: #fef7ff00;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  img {
+    width: 20%;
+  }
+}
