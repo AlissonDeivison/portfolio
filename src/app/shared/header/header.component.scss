@@ -1,0 +1,31 @@
+@import 'variables'; //Import the variables file
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    img{
+        position: fixed;
+        margin-left: 1rem;
+        width: 80px;
+        left: 0;
+    }
+    ul{
+        display: flex;
+        padding: 5px;
+    }
+    li{
+        list-style: none;
+        margin: 0 1rem;
+    
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            &:hover{
+                background-color: #433F3C;
+                border-radius: 8px;
+            }
+        }
+    }
+}
