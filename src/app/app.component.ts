@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from "./shared/footer/footer.component";
-import { HeaderComponent } from "./shared/header/header.component";
+import { HomeComponent } from './pages/home/home.component';
+import { MatTabsModule } from '@angular/material/tabs';
+
+
 
 @Component({
     selector: 'app-root',
@@ -10,8 +12,8 @@ import { HeaderComponent } from "./shared/header/header.component";
     styleUrl: './app.component.scss',
     imports: [
       RouterOutlet, 
-      FooterComponent, 
-      HeaderComponent,
+      HomeComponent,
+      MatTabsModule,
     ]
 })
 export class AppComponent {
