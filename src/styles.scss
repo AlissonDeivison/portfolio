@@ -3,3 +3,16 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.mat-mdc-tab-header{ // This is the class that is applied to the header of the tab
+    margin-bottom: 2rem;
+}
+.mdc-tab__text-label{ // This is the class that is applied to the text of the tab
+    color: white !important;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline{ // This is the class that is applied to the underline of the tab
+    border-color: #2f527c !important;
+}
