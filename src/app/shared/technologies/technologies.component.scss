@@ -1,0 +1,24 @@
+h2 {
+  color: white;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 20%;
+  border-radius: 20px;
+  justify-content: flex-start;
+
+  img {
+    height: 30px;
+    width: 30px;
+    filter:brightness( 0.8 ) grayscale( 1 ) sepia( 1 ) saturate( 1 ) hue-rotate( 180deg );
+
+    &:hover {
+      filter: drop-shadow(0 0 0.75rem white);
+      transform: scale(1.2);
+    }
+  }
+}
