@@ -23,7 +23,8 @@ export class TechnologiesComponent {
     { name: 'JavaScript', path: 'assets/icons/js.svg' },
     { name: 'TypeScript', path: 'assets/icons/typescript.svg' },
     { name: 'Figma', path: 'assets/icons/figma.svg' },
-
+    { name: 'HTML', path: 'assets/icons/html.svg' },
+    { name: 'SCSS', path: 'assets/icons/scss2.svg' },
   ];
   
 }
