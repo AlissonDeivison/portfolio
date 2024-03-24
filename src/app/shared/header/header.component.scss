@@ -38,6 +38,8 @@
 :host ::ng-deep app-container {
   //To alter and encapsule the styles of the app-container component in the header component
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-between;
   margin-top: 8rem;
   align-items: center;
