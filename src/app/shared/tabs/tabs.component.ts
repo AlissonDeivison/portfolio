@@ -6,6 +6,7 @@ import {AsyncPipe} from '@angular/common';
 export interface ExampleTab {
   label: string;
   content: string;
+  link?: string;
 }
 
 /**
@@ -24,11 +25,11 @@ export class TabGroupAsyncExample {
     this.asyncTabs = new Observable((observer: Observer<ExampleTab[]>) => {
       setTimeout(() => {
         observer.next([
-          {label: 'First', content: 'Content 1'},
-          {label: 'Second', content: 'Content 2'},
-          {label: 'Third', content: 'Content 3'},
-          {label: 'Third', content: 'Content 3'},
-          {label: 'Third', content: 'Content 3'},
+          {label: 'Organo', content: 'Aplicação de gerenciamento de equipes e projetos utilizando React', link: 'https://organo-six-topaz.vercel.app/' }, 
+          {label: 'Pensamentos', content: 'Aplicação de gerenciamento de pensamentos utilizando Angular', link: 'https://thoughts-ochre.vercel.app/' },
+          {label: 'Jornada', content: 'Aplicação de venda de passagens aéreas utilizando Angular', link: 'https://passagens-aereas.vercel.app/' },
+          {label: 'Aluroni', content: 'Aplicação de cardárpio de restaurante utilizando React', link: 'https://aluroni-navy.vercel.app/' },
+          {label: 'Alura Studies', content: 'Aplicações de estudos utilizando React', link: 'https://alura-studies-self.vercel.app/' },
         ]);
       });
     });
