@@ -1,0 +1,28 @@
+h2 {
+  color: white;
+}
+
+.certificates-container {
+  display: flex;
+  max-width: 20rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  p {
+    color: white;
+    text-align: start;
+
+    &.title {
+      font-size: 1.2rem;
+    }
+  }
+
+  button{
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    
+  }
+}
