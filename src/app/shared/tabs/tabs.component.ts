@@ -4,6 +4,7 @@ import { AsyncPipe, CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { ScrollService } from '../../scroll.service';
+import { Router } from '@angular/router';
 
 
 
@@ -20,12 +21,17 @@ export interface ExampleTab {
   imports: [MatTabsModule, AsyncPipe, CommonModule, MatCardModule, MatButtonModule],
 })
 export class TabGroupAsyncExample {
-  constructor(private scrollService: ScrollService) { }
+  constructor(private scrollService: ScrollService, private router: Router) { }
   
   scrollTo(anchor: string): void {
     this.scrollService.scrollTo(anchor);
   }
   
+
+  redirectTo(link: string): void {
+    window.open(link, "_blank");
+  }
+
   tabs: ExampleTab[] = [
     {
       label: 'Organo',

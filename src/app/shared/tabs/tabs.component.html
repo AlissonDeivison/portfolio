@@ -26,12 +26,8 @@
             <span style="color: white">{{ item.content }}</span>
           </div>
 
-          <button mat-raised-button color="warn" style="width: 10rem; margin-top:2rem; align-self:center; filter:brightness(0.8) grayscale(1) sepia(1) saturate(1) hue-rotate(180deg);">
-            <a
-              href="{{ item.link }}"
-              style="color: #ffffff; text-decoration: none"
-              >Project</a
-            >
+            <button mat-raised-button color="primary" style="width: 10rem; margin-top:2rem; align-self:center; " (click)="redirectTo(item.link ?? '')">
+            Project
           </button>
         </mat-card>
       </div>
