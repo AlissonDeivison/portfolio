@@ -148,6 +148,46 @@ export class CertificatesComponent {
       hours: 8,
       pdf: 'assets/pdfs/cert-15.pdf'
     },
+    {
+      id: 16,
+      title: 'JavaScript from basic to advanced (c/Node.Js and projects)',
+      description: "From basic concepts to advanced topics of JavaScript, including Node.js integration and project development, in this comprehensive course. Starting with fundamental JavaScript principles like variables and functions, asynchronous programming and DOM manipulation. Server-side development with Node.js and build APIs using Express.js.",
+      date: '24-11-2023',
+      hours: 20.5,
+      pdf: 'assets/pdfs/cert-16.pdf'
+    },
+    {
+      id: 17,
+      title: 'Certificate of participation as an inspirer of World Creativity Day',
+      description: "Certificate of participation as an inspirer participating in the Pitch Round - Unifacisa Challenge",
+      date: '23-04-2023',
+      hours: 3,
+      pdf: 'assets/pdfs/cert-17.pdf'
+    },
+    {
+      id: 18,
+      title: 'Innovation Career Panel',
+      description: "Participated in the Innovation Carreita Panel during the Unifacisa Career Forum 2023",
+      date: '10-06-2023',
+      hours: 5,
+      pdf: 'assets/pdfs/cert-18.pdf'
+    },
+    {
+      id: 19,
+      title: 'National ranking achievement',
+      description: 'First in the national ranking in the English-language app "Flexge"',
+      date: '26-04-2023',
+      hours: 0,
+      pdf: 'assets/pdfs/cert-19.pdf'
+    },
+    {
+      id: 20,
+      title: 'Certificate of achievement',
+      description: "Achieved and English proficiency level equivalent to A1 based on Common European Framework of Reference for Languages as administered under the auspices of Flexge's English Fluency Teste.",
+      date: '26-04-2023',
+      hours: 0,
+      pdf: 'assets/pdfs/cert-20.pdf'
+    },
   ];
 
   constructor() { }
