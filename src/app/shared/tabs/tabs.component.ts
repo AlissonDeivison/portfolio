@@ -3,6 +3,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { ScrollService } from '../../scroll.service';
 
 
 
@@ -19,6 +20,12 @@ export interface ExampleTab {
   imports: [MatTabsModule, AsyncPipe, CommonModule, MatCardModule, MatButtonModule],
 })
 export class TabGroupAsyncExample {
+  constructor(private scrollService: ScrollService) { }
+  
+  scrollTo(anchor: string): void {
+    this.scrollService.scrollTo(anchor);
+  }
+  
   tabs: ExampleTab[] = [
     {
       label: 'Organo',
