@@ -11,6 +11,10 @@
     margin-left: 1rem;
     width: 80px;
     left: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   ul {
@@ -30,6 +34,7 @@
       &:hover {
         background-color: #433F3C;
         border-radius: 8px;
+        cursor: pointer;
       }
     }
   }
