@@ -1,18 +1,22 @@
-body{
-    background: linear-gradient(to bottom, #2f527c, #433F3C);
-    height: 100vh;
-    margin: 0;
+body {
+  background: linear-gradient(to bottom, #2f527c, #433F3C);
+  height: 500vh;
+  margin: 0;
 }
 
-.mat-mdc-tab-header{ // This is the class that is applied to the header of the tab
-    margin-bottom: 2rem;
-}
-.mdc-tab__text-label{ // This is the class that is applied to the text of the tab
-    color: white !important;
-    font-size: 16px;
-    font-weight: 300;
+.mat-mdc-tab-header {
+  // This is the class that is applied to the header of the tab
+  margin-bottom: 2rem;
 }
 
-.mat-mdc-tab .mdc-tab-indicator__content--underline{ // This is the class that is applied to the underline of the tab
-    border-color: #2f527c !important;
+.mdc-tab__text-label {
+  // This is the class that is applied to the text of the tab
+  color: rgb(255, 255, 255) !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+  // This is the class that is applied to the underline of the tab
+  border-color: #ffffff !important;
 }
