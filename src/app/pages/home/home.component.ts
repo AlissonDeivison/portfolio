@@ -6,6 +6,7 @@ import { ContainerComponent } from '../../shared/container/container.component';
 import { TechnologiesComponent } from '../../shared/technologies/technologies.component';
 import { CertificatesComponent } from '../../shared/certificates/certificates.component';
 import { AboutMeComponent } from '../../shared/about-me/about-me.component';
+import { ScrollService } from '../../scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -15,5 +16,9 @@ import { AboutMeComponent } from '../../shared/about-me/about-me.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  constructor(private scrollService: ScrollService) { }
 
+  scrollTo(anchor: string): void {
+    this.scrollService.scrollTo(anchor);
+  }
 }
