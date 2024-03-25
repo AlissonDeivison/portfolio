@@ -1,10 +1,40 @@
-
 <mat-tab-group>
-    @for (tab of asyncTabs | async; track tab) {
-      <mat-tab>
-        <ng-template mat-tab-label>{{tab.label}}</ng-template>
-        {{tab.content}}
-        <a href="{{ tab.link }}">Link da aplicação</a>
-      </mat-tab>
-    }
-  </mat-tab-group>
+  <ng-container *ngFor="let item of tabs">
+    <mat-tab label="{{ item.label }}">
+      <div
+        class="teste"
+        style="
+          height: 20rem;
+          border-radius: 20px;
+          padding: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        "
+      >
+        <mat-card style="background-color: #94532100; padding: 2rem">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              gap: 2rem;
+              align-items: center;
+            "
+          >
+            <img src="{{ item.image }}" style="height: 15rem" />
+            <span style="color: white">{{ item.content }}</span>
+          </div>
+
+          <button mat-raised-button color="warn" style="width: 10rem; margin-top:2rem; align-self:center; filter:brightness(0.8) grayscale(1) sepia(1) saturate(1) hue-rotate(180deg);">
+            <a
+              href="{{ item.link }}"
+              style="color: #ffffff; text-decoration: none"
+              >Project</a
+            >
+          </button>
+        </mat-card>
+      </div>
+    </mat-tab>
+  </ng-container>
+</mat-tab-group>
