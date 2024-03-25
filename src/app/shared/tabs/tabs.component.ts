@@ -29,31 +29,31 @@ export class TabGroupAsyncExample {
     {
       label: 'Organo',
       content:
-        'Organo é uma aplicação de gerenciamento de tarefas construída com React, representando um dos meus primeiros empreendimentos com essa biblioteca. Originou-se durante o curso de React ministrado pela Alura, e aproveitei a oportunidade para explorar várias tecnologias complementares, incluindo React Router, Context API, Styled Components e Axios, entre outras. Para fornecer acesso ao projeto, optei por hospedá-lo na plataforma Vercel, garantindo assim sua disponibilidade e desempenho otimizados.',
+        'Organo is a task management application built with React, representing one of my first ventures with this library. It originated during the React course offered by Alura, where I took the opportunity to explore various complementary technologies, including React Router, Context API, Styled Components, and Axios, among others. To provide access to the project, I chose to host it on the Vercel platform, thus ensuring its availability and optimized performance..',
       link: 'https://organo-six-topaz.vercel.app/',
       image: 'assets/organo.svg',
     },
     {
       label: 'Memoteca',
-      content: 'Memoteca é uma aplicação de gerenciamento de memórias, marcando meu primeiro projeto desenvolvido com Angular. Durante sua criação, mergulhei fundo nos recursos e conceitos fundamentais da biblioteca, explorando componentes, serviços, rotas, formulários reativos e observáveis, entre outros aspectos essenciais. Optei por hospedar o projeto na plataforma Vercel, assegurando sua disponibilidade e um desempenho otimizado para os usuários. Este projeto não apenas ampliou minha compreensão do Angular, mas também me proporcionou uma base sólida para futuros empreendimentos nesta tecnologia emocionante.',
+      content: "Memoteca is a memory management application, marking my first project developed with Angular. During its creation, I delved deep into the library's fundamental features and concepts, exploring components, services, routes, reactive forms, and observables, among other essential aspects. I chose to host the project on the Vercel platform, ensuring its availability and optimized performance for users. This project not only expanded my understanding of Angular but also provided me with a solid foundation for future endeavors in this exciting technology.",
       link: 'https://thoughts-ochre.vercel.app/',
       image: 'assets/memoteca.svg',
     },
     {
       label: 'Jornada',
-      content: 'Jornada foi meu segundo projeto com Angular, desenvolvido durante um curso no Alura. Ele representa um sistema de compra de passagens aéreas, onde explorei extensivamente os recursos da biblioteca Angular Material, desde cards e botões até datepickers, chips e icons. Ao hospedar o projeto na plataforma Vercel, garanti disponibilidade contínua e desempenho otimizado, consolidando não apenas meu domínio do Angular, mas também minha capacidade de criar experiências de usuário intuitivas e atrativas.',
+      content: 'Jornada was my second project with Angular, developed during a course at Alura. It represents an airline ticket booking system, where I extensively explored the features of the Angular Material library, from cards and buttons to datepickers, chips, and icons. By hosting the project on the Vercel platform, I ensured continuous availability and optimized performance, consolidating not only my mastery of Angular but also my ability to create intuitive and attractive user experiences.',
       link: 'https://passagens-aereas.vercel.app/',
       image: 'assets/jornada.svg',
     },
     {
       label: 'Aluroni',
-      content: 'Aluroni foi um projeto desenvolvido em React durante um dos cursos oferecidos pela Alura. Nele, explorei conceitos de listagem de produtos, filtragem dinâmica e consumo de informações através de um arquivo JSON. Hospedado na plataforma Vercel, o projeto garantiu disponibilidade e desempenho otimizado para os usuários. Esta experiência sólida não apenas fortaleceu minha base em React, mas também expandiu minha compreensão dos conceitos fundamentais da biblioteca, preparando-me para futuros empreendimentos com confiança e expertise.',
+      content: "Aluroni was a project developed in React during one of the courses offered by Alura. In it, I explored concepts such as product listing, dynamic filtering, and data consumption through a JSON file. Hosted on the Vercel platform, the project ensured availability and optimized performance for users. This solid experience not only strengthened my foundation in React but also expanded my understanding of the library's fundamental concepts, preparing me for future endeavors with confidence and expertise.",
       link: 'https://aluroni-navy.vercel.app/',
       image: 'assets/aluroni.svg',
     },
     {
       label: 'Alura Studies',
-      content: 'Este foi um projeto rápido criado com o objetivo de dominar o uso do TypeScript e do React. A ideia central era desenvolver um gerenciador de tarefas simples, com um cronômetro integrado. As funcionalidades incluíam a exibição do cronômetro, contagem regressiva, listagem de tarefas a serem realizadas e a capacidade de adicionar novas atividades. O projeto foi hospedado na plataforma Vercel e está acessível para utilização.',
+      content: 'This was a quick project created with the aim of mastering the use of TypeScript and React. The central idea was to develop a simple task manager with an integrated timer. Features included displaying the timer, countdown, listing tasks to be completed, and the ability to add new activities. The project was hosted on the Vercel platform and is accessible for use.',
       link: 'https://alura-studies-self.vercel.app/',
       image: 'assets/studies.svg',
     },
