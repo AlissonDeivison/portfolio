@@ -3,7 +3,7 @@ services:
     build: .
     container_name: meu-portfolio-angular
     ports:
-      - "8080:80"
+      - "8082:8082"
     volumes:
       - ./dist/portfolio:/usr/share/nginx/html
     environment:
