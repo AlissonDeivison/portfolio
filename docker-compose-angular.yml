@@ -10,10 +10,10 @@ services:
       - NGINX_HOST=localhost
       - NGINX_PORT=80
     networks:
-      - net
+      - nginx_net
     restart: unless-stopped
 
 networks:
-  default:
+  nginx_net:
     external: true
     name: nginx_net
