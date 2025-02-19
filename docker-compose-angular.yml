@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build: .
+    container_name: meu-portfolio-angular
+    ports:
+      - "8080:80"
+    volumes:
+      - ./dist/portfolio:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    networks:
+      - net
+    restart: unless-stopped
+
+networks:
+  net:
+    external: true  # Usando a rede externa existente
