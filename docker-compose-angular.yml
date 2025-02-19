@@ -14,5 +14,6 @@ services:
     restart: unless-stopped
 
 networks:
-  net:
+  default:
     external: true
+    name: nginx_net
