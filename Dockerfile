@@ -1,3 +1,4 @@
+# Etapa de Build (Angular)
 FROM node:20-alpine AS build
 
 WORKDIR /app
@@ -9,12 +10,14 @@ RUN npm cache clean --force && \
 
 COPY . .
 
-RUN npm run build --prod --verbose
+RUN npm run build --configuration=production --verbose
 
+# Etapa de Produção (Nginx)
 FROM nginx:alpine
 
+# Copia os arquivos de build do Angular para o Nginx
 COPY --from=build /app/dist/portfolio /usr/share/nginx/html
 
-EXPOSE 8082
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
