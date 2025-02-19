@@ -5,7 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm cache clean --force && \
-    npm install --only=development
+    npm install
 
 COPY . .
 
