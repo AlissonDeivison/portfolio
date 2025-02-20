@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./dist/portfolio:/usr/share/nginx/portfolio
+      - ./dist/portfolio:/usr/share/nginx/html
     environment:
       - NGINX_HOST=localhost
       - NGINX_PORT=80
