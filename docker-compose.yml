@@ -1,16 +1,17 @@
 services:
   portfolio:
-    image: sua-imagem-do-portfolio  # Substitua pelo nome da sua imagem Docker
-    container_name: portfolio_app
-    restart: always
-    environment:
-      - NODE_ENV=production
-      - VIRTUAL_HOST=${SUBDOMAIN}.${DOMAIN_NAME}  # Variáveis para o Nginx Proxy Manager
-      - VIRTUAL_PORT=3000  # Porta em que a aplicação está rodando
+    build: .
+    container_name: portfolio-pessoal
+    ports:
+      - "8080:80"
     volumes:
-      - ./app:/app  # Ajuste conforme a estrutura do seu projeto
+      - ./dist/portfolio:/usr/share/nginx/portfolio
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
     networks:
       - nginx_net
+    restart: unless-stopped
 
 networks:
   nginx_net:
