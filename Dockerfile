@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Executa o build da aplicação Angular
-RUN npm run build --prod --verbose
+RUN npm run build --prod
 
 # Estágio de produção (NGINX)
 FROM nginx:alpine
