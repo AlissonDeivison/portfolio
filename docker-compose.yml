@@ -1,0 +1,18 @@
+services:
+  portfolio:
+    image: sua-imagem-do-portfolio  # Substitua pelo nome da sua imagem Docker
+    container_name: portfolio_app
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=${SUBDOMAIN}.${DOMAIN_NAME}  # Variáveis para o Nginx Proxy Manager
+      - VIRTUAL_PORT=3000  # Porta em que a aplicação está rodando
+    volumes:
+      - ./app:/app  # Ajuste conforme a estrutura do seu projeto
+    networks:
+      - nginx_net
+
+networks:
+  nginx_net:
+    external: true
+    name: nginx_net
